@@ -3,26 +3,22 @@
 const RSS_URL = "http://www.ruanyifeng.com/blog/atom.xml";
 let blog ;
 
-import { parseString } from 'xml2js';
+// fetch(RSS_URL)
+//   .then(response => response.text())
+//   .then(str => new window.DOMParser().parseFromString(str, "text/html"))
+// //   .then(data => console.log(blog_type=typeof(data)))
+//   .then(data => console.log(blog = data))
 
-// Replace the URL with your own XML file URL
 const url = RSS_URL;
 
 fetch(url)
   .then(response => response.text())
-  .then(xml => {
-    parseString(xml, (err, result) => {
-      if (err) {
-        console.error(err);
-        return;
-      }
-      console.log(result); // This should output a JavaScript object
-    });
+  .then(data => {
+    console.log(blog = data); // This should output the response body as text
   })
   .catch(error => {
     console.error(error);
   });
-
 
 
 

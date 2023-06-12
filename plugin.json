@@ -1,18 +1,18 @@
 {
-  "name": "plugin-sample-vite-svelte",
+  "name": "siyuan-plugin-rss-reader",
   "author": "frostime",
   "url": "https://github.com/siyuan-note/plugin-sample-vite-svelte",
-  "version": "0.1.4",
+  "version": "0.1.1",
   "minAppVersion": "2.9.0",
-  "backends": ["windows", "linux", "darwin"],
-  "frontends": ["desktop"],
+  "backends": ["all"],
+  "frontends": ["all"],
   "displayName": {
     "en_US": "Plugin sample with vite and svelte",
-    "zh_CN": "插件样例 vite + svelte 版"
+    "zh_CN": "SiYuanRSS阅读器"
   },
   "description": {
     "en_US": "SiYuan plugin sample with vite and svelte",
-    "zh_CN": "使用 vite 和 svelte 开发的思源插件样例"
+    "zh_CN": "siyuan rss reader"
   },
   "readme": {
     "en_US": "README.md",

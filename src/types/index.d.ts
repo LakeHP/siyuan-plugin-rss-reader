@@ -68,3 +68,4 @@ type doOperation = {
 declare module '@postlight/parser'
 declare module 'xml2js'
 declare module 'https'
+declare module 'xml2html'

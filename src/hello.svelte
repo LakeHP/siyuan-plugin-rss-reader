@@ -1,20 +1,14 @@
 <script lang="ts">
 
 const RSS_URL = "http://www.ruanyifeng.com/blog/atom.xml";
-let blog ;
-
-// fetch(RSS_URL)
-//   .then(response => response.text())
-//   .then(str => new window.DOMParser().parseFromString(str, "text/html"))
-// //   .then(data => console.log(blog_type=typeof(data)))
-//   .then(data => console.log(blog = data))
+let xmlText ;
 
 const url = RSS_URL;
 
 fetch(url)
   .then(response => response.text())
   .then(data => {
-    console.log(blog = data); // This should output the response body as text
+    console.log(xmlText = data); // This should output the response body as text
   })
   .catch(error => {
     console.error(error);
@@ -25,7 +19,7 @@ fetch(url)
 </script>
 
 <div id="hello">
-    {blog}
+    {xmlText}
 </div>
 <!-- 
 <style lang="scss">

@@ -64,3 +64,7 @@ type doOperation = {
     previousID: BlockId;
     retData: null;
 }
+
+declare module '@postlight/parser'
+declare module 'xml2js'
+declare module 'https'
